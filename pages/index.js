@@ -3,12 +3,12 @@ import { useRouter } from "next/router";
 
 function Home() {
     const router = useRouter();
-    const handleClick = () => {
-        router.push("/product");
-    }
+    // const handleClick = () => {
+    //     router.push("/product");
+    // }
     return (
         <>
-            <h1>home page</h1>
+            {/* <h1>home page</h1>
             <Link href="/profile">
                 <a>profile</a>
             </Link>
@@ -23,8 +23,10 @@ function Home() {
             <br />
             <Link href="/dashboard">
                 <a>404.js will be render if page not found</a>
+            </Link> */}
+            <Link href="/users" prefetch={false}>
+                <a>user</a>
             </Link>
-
         </>
     )
 }
