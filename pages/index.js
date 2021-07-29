@@ -1,6 +1,11 @@
 import Link from "next/link"
+import { useRouter } from "next/router";
 
 function Home() {
+    const router = useRouter();
+    const handleClick = () => {
+        router.push("/product");
+    }
     return (
         <>
             <h1>home page</h1>
@@ -11,6 +16,10 @@ function Home() {
             <Link href="/product">
                 <a>product</a>
             </Link>
+            <br />
+            <button onClick={handleClick}>
+                order now
+            </button>
         </>
     )
 }
