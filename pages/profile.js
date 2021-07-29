@@ -1,8 +1,14 @@
+import Link from "next/link"
 function Profile() {
     return (
-        <h1>
-           profile 
-        </h1>
+        <div>
+            <h1>
+               profile
+            </h1>
+            <Link href="/">
+                <a>home</a>
+            </Link>
+        </div>
     )
 }
 
