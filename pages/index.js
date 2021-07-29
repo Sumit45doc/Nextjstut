@@ -27,6 +27,12 @@ function Home() {
             <Link href="/users" prefetch={false}>
                 <a>user</a>
             </Link>
+            <br />
+            <br />
+            <br />
+            <Link href="/posts">
+                <a>posts</a>
+            </Link>
         </>
     )
 }
