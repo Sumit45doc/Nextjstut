@@ -20,6 +20,11 @@ function Home() {
             <button onClick={handleClick}>
                 order now
             </button>
+            <br />
+            <Link href="/dashboard">
+                <a>404.js will be render if page not found</a>
+            </Link>
+
         </>
     )
 }
