@@ -29,9 +29,13 @@ function Home() {
             </Link>
             <br />
             <br />
-            <br />
             <Link href="/posts">
                 <a>posts</a>
+            </Link>
+            <br />
+            <br />
+            <Link href="/dashboard">
+                <a>Dashboard</a>
             </Link>
         </>
     )
