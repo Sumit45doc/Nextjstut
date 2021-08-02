@@ -37,6 +37,10 @@ function Home() {
             <Link href="/dashboard">
                 <a>Dashboard</a>
             </Link>
+            <br />
+            <Link href="/dashboard-swr">
+                <a>Dashboard-swr</a>
+            </Link>
         </>
     )
 }
