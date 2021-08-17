@@ -1,10 +1,11 @@
+import Footer from "../components/footer";
 import User from "../components/user";
 
 function UserList(props) {
     const { users } = props;
     return (
         <div>
-            {users.map((user) => <User user={user} key={user.id}/>)}
+            {users.map((user) => <User user={user} key={user.id} />)}
         </div>
     )
 }
@@ -19,5 +20,12 @@ export async function getStaticProps() {
     }
 
 }
+
+UserList.getLayout = function PageLayout(page) {
+    return (
+        <>{page} <Footer/> </>
+    )
+}
+
 
 export default UserList
