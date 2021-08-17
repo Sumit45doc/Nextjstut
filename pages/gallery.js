@@ -1,6 +1,6 @@
 import Image from "next/image";
-import pic from "../public/images/1_1.jpg"
-import pic2 from "../public/images/2.jpg"
+import pic from "public/images/1_1.jpg"
+import pic2 from "public/images/2.jpg"
 import React from "react"
 function Gallery() {
     const [toggle, setToggle] = React.useState(false)

@@ -1,4 +1,4 @@
-import Footer from "../components/footer";
+import Footer from "../components/layout/footer";
 import User from "../components/user";
 import Head from "next/head";
 function UserList(props) {
