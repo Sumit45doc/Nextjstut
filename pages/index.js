@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router";
-
+import Head from "next/head";
 function Home() {
     const router = useRouter();
     // const handleClick = () => {
@@ -8,6 +8,10 @@ function Home() {
     // }
     return (
         <>
+            <Head>
+                <title>Nextjs</title>
+                <meta name="description" content="home page"/>
+            </Head>
             {/* <h1>home page</h1>
             <Link href="/profile">
                 <a>profile</a>

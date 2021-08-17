@@ -1,16 +1,24 @@
 import Footer from '../components/footer'
 import Header from '../components/header/header'
 import '../styles/globals.css'
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
 
-  if (Component.getLayout) return Component.getLayout(<Component {...pageProps} />)
+  if (Component.getLayout) return Component.getLayout(<> <Head>
+    <title>universal title</title>
+    <meta name="description" content="universal decription" />
+  </Head><Component {...pageProps} /></>)
 
   return (
     <>
-    <Header />
-    <Component {...pageProps} />
-    <Footer />
+      <Head>
+        <title>universal title</title>
+        <meta name="description" content="universal decription" />
+      </Head>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
