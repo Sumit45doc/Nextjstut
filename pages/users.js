@@ -1,10 +1,15 @@
+import Footer from "../components/layout/footer";
 import User from "../components/user";
-
+import Head from "next/head";
 function UserList(props) {
     const { users } = props;
     return (
         <div>
-            {users.map((user) => <User user={user} key={user.id}/>)}
+            <Head>
+                <title>user</title>
+                <meta name="description" content="user info" />
+            </Head>
+            {users.map((user) => <User user={user} key={user.id} />)}
         </div>
     )
 }
@@ -19,5 +24,12 @@ export async function getStaticProps() {
     }
 
 }
+
+UserList.getLayout = function PageLayout(page) {
+    return (
+        <>{page} <Footer/> </>
+    )
+}
+
 
 export default UserList
